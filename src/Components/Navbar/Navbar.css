@@ -1,0 +1,41 @@
+.link-nav{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    font-size: 20px;
+    transition: all 0.2s 0.2;
+    color: rgb(190, 190, 190);
+}
+
+.link-nav:focus{
+    font-size: 21px;
+    color: white;
+}
+
+.nav-text{
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+}
+
+.img-text{
+    width: 20px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 140px;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.397);
+}
+
+.nav-icon-text{
+    column-gap: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+    font-family: 'Mouse Memoirs', sans-serif;
+}

@@ -1,0 +1,54 @@
+.home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.home-title{
+    font-size: 110px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    animation: mymove2 3s infinite;
+}
+
+@keyframes mymove2{
+    35%{transform: skew(3deg, 3deg);}
+    70%{transform: skew(-3deg, -3deg);}
+}
+
+.home-btn{
+    width: 200px;
+    height: 60px;
+    border: 0;
+    border-radius: 20px;
+    background: rgb(0, 184, 0);
+    font-size: 35px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    cursor: pointer;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove{
+    50%{transform: scale(2,2);}
+    35% {transform: rotate(10deg);}
+    70% {transform: rotate(-10deg);}
+}
+
+.img-home{
+    position: relative;
+    left: 30px;
+}
+
+.home-start{
+    height: 200px;
+    position: absolute;
+    top: 520px;
+    background: rgba(26, 26, 26, 0.856);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 100px;
+    row-gap: 10px;
+    border-radius: 40px;
+}

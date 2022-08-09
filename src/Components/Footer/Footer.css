@@ -1,0 +1,8 @@
+.foot{
+    border-top: 2px solid rgba(255, 255, 255, 0.397);
+    padding: 20px 50px;
+}
+
+.foot-text{
+    font-size: 20px;
+}
