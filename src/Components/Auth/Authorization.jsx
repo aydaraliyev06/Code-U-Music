@@ -17,7 +17,6 @@ const Authorization = () => {
         setHasAccount, 
         emailError, 
         passwordError,
-        // user
       } = useContext(authContext)
     
       const navigate = useNavigate()
@@ -34,20 +33,20 @@ const Authorization = () => {
             <div className='inputs-auth'>
                 {
                     hasAccount ? (
-                        <h1 className='int-text'>Create Your Account</h1>
-                    ):(
                         <h1 className='int-text'>Login to Your Account</h1>
+                    ):(
+                        <h1 className='int-text'>Create Your Account</h1>
                     )
                 }
                 <input type="text" placeholder='@email' value={email} onChange={(e)=>setEmail(e.target.value)} className="inp-auth" />
-                <span>{emailError}</span>
-                <span>{passwordError}</span>
+                <span style={{width:'200px'}}>{emailError}</span>
+                <span style={{width:'200px'}}>{passwordError}</span>
                 <input type="text" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)} className="inp-auth" />
                 {
                     hasAccount ? (
-                        <button className='btn-auth' onClick={signIn}>Sing Up</button>
+                        <button className='btn-auth' onClick={signIn}>Sing In</button>
                     ):(
-                        <button className='btn-auth' onClick={handleSignUp}>Sing In</button>
+                        <button className='btn-auth' onClick={handleSignUp}>Sing Up</button>
                     )
                 }
 
@@ -55,12 +54,12 @@ const Authorization = () => {
                   hasAccount ? (
                     <Link to='#' onClick={()=>setHasAccount(!hasAccount)}
                       href="#" variant="body2">
-                      {"Don't have an account? Sign Up"}
+                      {"Already have an account! Sign In"}
                     </Link>
                   ) : (
                     <Link to='#' onClick={()=>setHasAccount(!hasAccount)}
                       href="#" variant="body2">
-                      {"Already have an account! Sign In"}
+                      {"Don't have an account? Sign Up"}
                     </Link>
                   )
                 }

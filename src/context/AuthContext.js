@@ -64,6 +64,7 @@ const AuthContextProvider = ({children}) => {
                         setPasswordError(error.message)
                 }
             })
+        
     }
 
     const handleLogout = () => {
