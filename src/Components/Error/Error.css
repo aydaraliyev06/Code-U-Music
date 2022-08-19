@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Poppins:wght@100;200&family=Silkscreen&display=swap');
+
+.Error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+.Error-gif{
+
+}
+
+.Error-title{
+    position: relative;
+    top: 20px;
+    font-size: 105px;
+    font-family: 'Silkscreen', cursive;
+    animation: errormove 3s infinite;
+}
+
+@keyframes errormove{
+    35%{
+        transform: rotate(5deg);
+    }
+    50%{
+        color: red;
+    }
+    70%{
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes errormove2{
+    35%{
+        transform: rotate(5deg);
+    }
+    50%{
+        transform: scale(2, 2);
+        color: red;
+    }
+    70%{
+        transform: rotate(-5deg);
+    }
+}
+
+.Error-sub{
+    position: relative;
+    top: 10px;
+    font-family: 'Silkscreen', cursive;
+    font-size: 30px;
+    animation: errormove2 3s infinite;
+}

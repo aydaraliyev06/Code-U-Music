@@ -1,5 +1,16 @@
 {
-    "music": [
-        
-    ]
+  "music": [
+    {
+      "nameMusic": "The Weeknd - Save Your Tears",
+      "image": "https://m-zona.net/uploads/posts/2020-12/1609243354_mzhsawvvpru.jpg",
+      "music": "https://m-zona.net/uploads/files/2021-01/1610192306_the-weeknd-save-your-tears.mp3",
+      "id": 3
+    },
+    {
+      "nameMusic": "Grouplove – Back in the 90's",
+      "image": "http://всесаундтреки.рф/coverost/2014-kon-bodzhek.jpg",
+      "music": "https://dl2.mp3party.net/online/9042441.mp3",
+      "id": 4
+    }
+  ]
 }

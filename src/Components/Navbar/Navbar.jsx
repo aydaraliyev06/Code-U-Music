@@ -1,34 +1,39 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import icon1 from '../image/icon-music.png';
-import './Navbar.css'
+import './Navbar.css';
+import heart from './Icons/heart.svg';
+import settings from './Icons/настройки.svg';
+import message from './Icons/message.svg';
+import world from './Icons/world.svg';
+import profile from './Icons/profile.svg';
 
 const Navbar = () => {
     return (
         <div className='nav'>
-            <NavLink className='nav-icon-text' to='/'>
+            <NavLink className='nav-icon-text' to='/musiclist'>
                 <img width={40} src={icon1} alt="icon" />
                 Code-U-Music
             </NavLink>
             <div className='nav-text'>
                 <NavLink className="link-nav" to='/'>
-                    <img className='img-text' src="https://cdn-user-icons.flaticon.com/76594/76594925/1660063611800.svg?token=exp=1660064513~hmac=26c1254115a99d2f21c67233bcb8842d" alt="" />
+                    <img className='img-text' src={profile} alt="profile" />
                     Profile
                 </NavLink>
                 <NavLink className='link-nav' to='/likedsongs'>
-                    <img className='img-text' src="https://cdn-user-icons.flaticon.com/76594/76594925/1660062366843.svg?token=exp=1660063269~hmac=ce85d262257abf146a2b504b8dbd14fa" alt="" />
+                    <img className='img-text' src={heart} alt="like songs" />
                     Liked Songs
                 </NavLink>
-                <NavLink className="link-nav" to='/'>
-                    <img className='img-text' src="https://cdn-user-icons.flaticon.com/76594/76594925/1660063800604.svg?token=exp=1660064702~hmac=9e690b9ebc38f597a9573cd39e42b84f" alt="" />
-                    Language
+                <NavLink className="link-nav" to='/add'>
+                    <img className='img-text' src={world} alt="language" />
+                    Add Music
                 </NavLink>
-                <NavLink className="link-nav" to='/'>
-                    <img className='img-text' src="https://cdn-user-icons.flaticon.com/76594/76594925/1660064162308.svg?token=exp=1660065064~hmac=c208e360bb76d9a662dd9d9921f355b6" alt="" />
+                <NavLink className="link-nav" to='/contactUs'>
+                    <img className='img-text' src={message} alt="message" />
                     Contact us
                 </NavLink>
-                <NavLink className="link-nav" to='/'>
-                    <img className='img-text' src="https://cdn-user-icons.flaticon.com/76594/76594925/1660064228498.svg?token=exp=1660065130~hmac=8f85b9a807d9a4f2e74c0b99161f0ad2" alt="" />
+                <NavLink className="link-nav" to='/settings'>
+                    <img className='img-text' src={settings} alt="settings" />
                     Settings
                 </NavLink>
             </div>

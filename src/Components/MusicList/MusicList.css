@@ -1,19 +1,83 @@
 .musiclist{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 900px;
+    height: 600px;
 }
 
+.inp-search{
+    width: 230px;
+    height: 30px;
+    color: black;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.musiclist-box{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-title{
+    position: relative;
+    z-index: 10;
+    font-size: 120px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    animation: textcolor 5s infinite;
+}
+
+@keyframes textcolor {
+    20%{color: blueviolet;}
+    40%{color:rgb(0, 184, 0)}
+    50%{transform: scale(1.2, 1.2);}
+    35%{transform: rotate(3deg);}
+    70%{transform: rotate(-3deg);}
+    60%{color: aqua;}
+    80%{color: yellow;}
+}
+
+
 .musiclist-m{
-    width: 700px;
-    height: 300px;
+    position: relative;
+    bottom: 45px;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     padding-top: 50px;
+    padding-bottom: 50px;
     background: rgb(26, 26, 26);
     border-radius: 50px;
 }
 
+.music-card{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.514);
+    column-gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 25px 7px 25px;
+}
 
+.btn-music-card{
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0);
+    border: 0;
+    cursor: pointer;
+}
+
+.music-card-left{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.music-card-title{
+    text-decoration: none;
+    font-size: 19px;
+}
